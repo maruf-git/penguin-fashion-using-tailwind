@@ -1,25 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Penguin Fashion</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+        .font-montserrat {
+            font-family: "Montserrat", system-ui;
+
+        }
+
+        .font-bebas {
+            font-family: "Bebas Neue", sans-serif;
+        }
+
+        .font-roboto {
+            font-family: "Roboto", sans-serif;
+        }
+
+        .dark-1 {
+            color: rgba(60, 60, 60, 1);
+        }
+
+        .dark-2 {
+            color: rgba(54, 57, 88, 1);
+        }
+
+        .dark-3 {
+            color: rgba(62, 62, 62, 1);
+        }
+
+        .yellow-1 {
+            color: rgba(250, 190, 76, 1);
+        }
+
+        .bg-1 {
+            background-color: rgba(255, 251, 240, 1);
+        }
+    </style>
 </head>
+
 <body>
-    <header>
-        <nav>
-
+    <header class="bg-1">
+        <nav class=" max-w-screen-xl my-0 mx-auto flex justify-between items-center py-4">
+            <div class="logo w-96">
+                <img src="icons/logo.png" alt="penguin-fashion logo">
+            </div>
+            <div class="nav-links">
+                <ul class="flex gap-14">
+                    <li><a href="#" class="dark-1 text-lg">Home</a></li>
+                    <li><a href="#" class="dark-1 text-lg">Product</a></li>
+                    <li><a href="#" class="dark-1 text-lg">About us</a></li>
+                    <li><a href="#" class="dark-1 text-lg">Contact us</a></li>
+                </ul>
+            </div>
         </nav>
-        <section class="hero">
-
+        <section class="max-w-screen-xl my-0 mx-auto hero flex items-center gap-80">
+            <div class="hero-left">
+                <h1 class="hero-title text-7xl font-bebas leading-[80px]"><span class="uppercase yellow-1">Be the Penguins</span><br>
+                    <span class="dark-2">of Winter</span>
+                </h1>
+                <p class="hero-des dark-3 text-base">
+                    Lorem Ipsum is simply dummy text of the printing<br>
+                    and typesetting industry.
+                </p>
+                <button class="bg-gradient-to-r from-[#A4BC46] to-[#85A019] text-white px-8 py-4 rounded-xl mt-3">BUY NOW</button>
+            </div>
+            <div class="hero-right">
+                <div class="girl-model"><img src="images/model.png" alt=""></div>
+            </div>
         </section>
     </header>
     <main>
 
     </main>
     <footer>
-        
+
     </footer>
 </body>
+
 </html>
