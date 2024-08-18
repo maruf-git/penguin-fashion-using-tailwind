@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Penguin Fashion</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/ba08c8e2bb.js" crossorigin="anonymous"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
@@ -49,12 +50,12 @@
 </head>
 
 <body>
-    <header class="bg-1">
-        <nav class=" max-w-screen-xl my-0 mx-auto flex justify-between items-center py-4">
-            <div class="logo w-96">
+    <header class="bg-1 pb-4 md:pb-12 lg:pb-20">
+        <nav class=" max-w-screen-xl my-0 mx-auto flex  justify-between items-center py-4 px-4">
+            <div class="w-48 md:w-96">
                 <img src="icons/logo.png" alt="penguin-fashion logo">
             </div>
-            <div class="nav-links">
+            <div class="hidden lg:block">
                 <ul class="flex gap-14">
                     <li><a href="#" class="dark-1 text-lg">Home</a></li>
                     <li><a href="#" class="dark-1 text-lg">Product</a></li>
@@ -62,15 +63,18 @@
                     <li><a href="#" class="dark-1 text-lg">Contact us</a></li>
                 </ul>
             </div>
+            <div class="block lg:hidden">
+                <i class="fa-solid fa-bars"></i>
+            </div>
         </nav>
-        <section class="max-w-screen-xl my-0 mx-auto hero flex items-center gap-80">
+        <section class="max-w-screen-xl my-10 md:my-8 mx-auto px-4 hero flex flex-col md:flex-row items-center gap-5 md:gap-20 lg:gap-80">
             <div class="hero-left">
                 <h1 class="hero-title text-7xl font-bebas leading-[80px]"><span class="uppercase yellow-1">Be the
                         Penguins</span><br>
                     <span class="dark-2">of Winter</span>
                 </h1>
                 <p class="hero-des dark-3 text-base">
-                    Lorem Ipsum is simply dummy text of the printing<br>
+                    Lorem Ipsum is simply dummy text of the printing<br  class="hidden lg:block">
                     and typesetting industry.
                 </p>
                 <button class="bg-gradient-to-r from-[#A4BC46] to-[#85A019] text-white px-8 py-4 rounded-xl mt-3">BUY
@@ -136,7 +140,7 @@
                             NOW</button>
                     </div>
                 </div>
-               
+
             </div>
         </section>
 
@@ -194,7 +198,51 @@
                             NOW</button>
                     </div>
                 </div>
-               
+
+            </div>
+        </section>
+
+        <!-- info section -->
+        <section class="max-w-screen-xl my-32 mx-auto flex justify-between items-center">
+            <!-- card container -->
+            <div class=" w-[40%]">
+                <!-- card -->
+                <div class="flex items-center gap-5 pl-5 pr-10 py-5 shadow-lg mb-6">
+                    <div class="w-16">
+                        <img class="w-full h-full"src="icons/house.png" alt="">
+                    </div>
+                    <div class="font-roboto">
+                        <h5 class="dark-2 text-2xl font-bold">Find the Perfect Fit</h5>
+                        <p class="dark-3 text-base">Everybody is different, which is why we
+                            offer styles for every body.</p>
+                    </div>
+                </div>
+                <!-- card -->
+                <div class="flex items-center gap-5 pl-5 pr-10 py-5 shadow-lg mb-6">
+                    <div class="w-16">
+                        <img class="w-full h-full"src="icons/box.png" alt="">
+                    </div>
+                    <div class="font-roboto ">
+                        <h5 class="dark-2 text-2xl font-bold">Find the Perfect Fit</h5>
+                        <p class="dark-3 text-base">One of the many reasons you can shop
+                            with peace of mind.</p>
+                    </div>
+                </div>
+                <!-- card -->
+                <div class="flex items-center gap-5 pl-5 pr-10 py-5 shadow-lg mb-6">
+                    <div class="w-16">
+                        <img class="w-full h-full"src="icons/question.png" alt="">
+                    </div>
+                    <div class="font-roboto ">
+                        <h5 class="dark-2 text-2xl font-bold">Find the Perfect Fit</h5>
+                        <p class="dark-3 text-base">They are here to help you. That's quite 
+                            literally what we pay them for.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- shopping image -->
+            <div class="w-[45%]">
+                <img src="images/shopping.png" alt="">
             </div>
         </section>
     </main>
